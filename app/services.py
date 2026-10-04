@@ -11,9 +11,9 @@ from app.account_security import generate_account_identifiers
 from app.security import clean_email, hash_password, iso_utc, make_id, parse_dt, utc_now
 
 PLAN_SEEDS = [
-    ("FREE", "Free", 0, 0, 50, 50, 1,
+    ("FREE", "Free", 0, 0, 10, 50, 1,
      ["dashboard", "products", "inventory", "sales", "customers", "basic_reports", "invoices"]),
-    ("STARTER", "Starter", 1500, 30, -1, -1, 2,
+    ("STARTER", "Starter", 1500, 30, 50, -1, 2,
      ["dashboard", "products", "inventory", "sales", "customers", "suppliers", "quotations", "invoices",
       "expense_tracking", "sales_reports", "pdf_invoices", "whatsapp_sharing"]),
     ("BUSINESS", "Business", 3500, 30, -1, -1, -1,
